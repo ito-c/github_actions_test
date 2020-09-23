@@ -1,0 +1,9 @@
+name: php ci test
+on: push
+
+jobs:
+  build:
+    name: Greeting
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello, hogehoge"
