@@ -50,5 +50,7 @@ jobs:
         run: echo ${GITHUB_EVENT_NAME}
       - name: echo github env
         run: echo ${GITHUB_WORKSPACE}
-      - name: echo github env
+      - name: echo 秘密情報
         run: echo "${{ secrets.SECRET_TOKEN }}"
+      - name: echo github token
+        run: echo "${{ secrets.GITHUB_TOKEN }}"
