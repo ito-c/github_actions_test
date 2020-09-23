@@ -3,7 +3,7 @@ on: push
 
 jobs:
   build:
-    name: Greeting
+    name: Greetingggggggggggggggggggggggggggggggg
     runs-on: ubuntu-latest
     steps:
       - run: echo "Hello, hogehoge"
