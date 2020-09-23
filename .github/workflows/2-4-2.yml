@@ -60,3 +60,5 @@ jobs:
         run: echo "${{ secrets.GITHUB_TOKEN }}"
   deploy:
     needs: [unit-test, lint, echo]
+      - name: echo 完了
+        run: echo '終わった'
