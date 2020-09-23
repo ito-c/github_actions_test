@@ -51,4 +51,4 @@ jobs:
       - name: echo github env
         run: echo ${GITHUB_WORKSPACE}
       - name: echo github env
-        run: echo ${secret.SECRET_TOKEN}
+        run: echo "${{ secret.SECRET_TOKEN }}"
