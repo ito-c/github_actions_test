@@ -40,7 +40,7 @@ jobs:
         uses: actions/checkout@v2.0.0
       - name: echo github env
         run: echo ${CI}
-        run: echo ${GITHUB_WORKFLOW}
+        # run: echo ${GITHUB_WORKFLOW}
         run: echo ${GITHUB_ACTOR}
         run: echo ${GITHUB_REPOSITORY}
         run: echo ${GITHUB_EVENT_NAME}
