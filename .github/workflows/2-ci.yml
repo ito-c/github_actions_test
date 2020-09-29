@@ -6,7 +6,7 @@ jobs:
     name: Unit Test
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest]
+        os: ubuntu-latest
         node: [10, 12]
     runs-on: ${{ matrix.os }}
     timeout-minutes: 5 # ジョブのタイムアウト時間
@@ -85,6 +85,12 @@ jobs:
         run: echo "${{ secrets.SECRET_TOKEN }}"
       - name: echo github token
         run: echo "${{ secrets.GITHUB_TOKEN }}"
+      - name: ls
+        run: cd ${GITHUB_WORKSPACE} && pwd && ls -al
+      - name: step替わりどこにいるか
+        run: pwd
+
+
   deploy:
     needs: [unit-test, lint, echo]
     name: 完了
