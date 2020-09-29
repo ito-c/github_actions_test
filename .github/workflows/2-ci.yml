@@ -86,7 +86,7 @@ jobs:
       - name: echo github token
         run: echo "${{ secrets.GITHUB_TOKEN }}"
       - name: ls
-        run: cd ${GITHUB_WORKSPACE} && pwd && ls -al
+        run: cd ${GITHUB_WORKSPACE} && pwd && ls -al && cd test
       - name: step替わりどこにいるか
         run: pwd
 
