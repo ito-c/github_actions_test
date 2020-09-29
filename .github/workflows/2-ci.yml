@@ -6,7 +6,7 @@ jobs:
     name: Unit Test
     strategy:
       matrix:
-        os: ubuntu-latest
+        os: [ubuntu-latest, macos]
         node: [10, 12]
     runs-on: ${{ matrix.os }}
     timeout-minutes: 5 # ジョブのタイムアウト時間
